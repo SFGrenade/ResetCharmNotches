@@ -17,12 +17,12 @@ namespace ResetCharmNotches
             Log("Initializing");
             Instance = this;
 
-            initCallbacks();
+            InitCallbacks();
 
             Log("Initialized");
         }
 
-        private void initCallbacks()
+        private void InitCallbacks()
         {
             // Hooks
             ModHooks.AfterSavegameLoadHook += OnAfterSavegameLoadHook;
